@@ -50,28 +50,36 @@
         <div class="numb-fields">
           <div class="number-field">
             <label for="numb">números</label>
-            <input type="number" id="numb" name="numb" value="2">
+            <div class="border-grad">
+              <input type="number" id="numb" name="numb" value="2">
+            </div>
           </div>
   
           <div class="number-field">
             <label for="initial-numb">de</label>
-            <input type="number" id="initial-numb" name="initial-numb" value="1">
+            <div class="border-grad">
+              <input type="number" id="initial-numb" name="initial-numb" value="1">
+            </div>
           </div>
   
           <div class="number-field">
             <label for="end-numb">a</label>
-            <input type="number" id="end-numb" name="end-numb" value="100">
+            <div class="border-grad">
+              <input type="number" id="end-numb" name="end-numb" value="100">
+            </div>
           </div>
         </div>
 
         <div class="opt-toggle">
-          <input type="radio" id="no-rep" name="no-rep">
-          <span>Não repetir número</span>
+          <input type="checkbox" id="no-rep" name="no-rep">
+          <div id="gap">
+            <p>Não repetir número</p>
+          </div>
         </div>
       </div>
 
       <div class="submit">
-        <button>SORTEAR →</button>
+        <button>SORTEAR <img src="assets/arrow.svg" alt="icone de seta"></button>
       </div>
     </form>
 
