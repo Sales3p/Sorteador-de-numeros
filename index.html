@@ -11,10 +11,13 @@
 </head>
 <body>
   <header>
-    <img src="assets/logo.svg" alt="Imagem da logo">
-    <span>NUMBERS</span>
+    <div class="container">
+      <img src="assets/logo.svg" alt="Imagem da logo">
+      <span>NUMBERS</span>
+    </div>
   </header>
-  <main>
+
+  <main class="content">
     <section>
       <div class="head">
         <p>ONLINE - GRATUITO</p>
@@ -26,7 +29,7 @@
           <img src="assets/question.svg" alt="icone de pergunta">
           <div>
             <h3>Como funciona o sorteador de números?</h3>
-            <p>O sorteador utiliza um algoritmo de geração aleatória para criar<br> números dentro do intervalo especificado pelo usuário.</p>
+            <p>O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.</p>
           </div>
         </div>
 
@@ -34,7 +37,7 @@
           <img src="assets/question.svg" alt="icone de pergunta">
           <div>
             <h3>Posso escolher o intervalo dos números?</h3>
-            <p>Sim, você pode definir os valores mínimo e máximo para o<br> intervalo dos números sorteados.</p>
+            <p>Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</p>
           </div>
         </div>
       </div>
@@ -51,27 +54,27 @@
           <div class="number-field">
             <label for="numb">números</label>
             <div class="border-grad">
-              <input type="number" id="numb" name="numb" value="2">
+              <input type="number" id="numb" name="numb" min="1" max="2" value="2" required>
             </div>
           </div>
   
           <div class="number-field">
             <label for="initial-numb">de</label>
             <div class="border-grad">
-              <input type="number" id="initial-numb" name="initial-numb" value="1">
+              <input type="number" id="initial-numb" name="initial-numb" min="1" max="1000" value="1" required>
             </div>
           </div>
   
           <div class="number-field">
             <label for="end-numb">a</label>
             <div class="border-grad">
-              <input type="number" id="end-numb" name="end-numb" value="100">
+              <input type="number" id="end-numb" name="end-numb" min="1" max="1000" value="100" required>
             </div>
           </div>
         </div>
 
         <div class="opt-toggle">
-          <input type="checkbox" id="no-rep" name="no-rep">
+          <input type="checkbox" id="no-rep" name="no-rep" checked>
           <div id="gap">
             <p>Não repetir número</p>
           </div>
